@@ -70,5 +70,5 @@ class TruckHandler { void processTruck(Truck t) {} }
 
 
 
-#SP-1 testing new jira space connection
+#SP-1 testing new jira space connections
 
