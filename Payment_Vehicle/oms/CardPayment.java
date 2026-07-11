@@ -1,16 +1,22 @@
-package oms;
+package oms.payment;
+
+import java.math.BigDecimal;
 
 public final class CardPayment implements PaymentMethod {
 
-    private static final double PROCESSING_FEE = 5.0; // was a magic number in the original
+    /** Fixed processing fee applied to every card payment. */
+    private static final BigDecimal PROCESSING_FEE = new BigDecimal("5.00");
+
+    /** Canonical type key for this strategy. */
+    private static final String TYPE = "CARD";
 
     @Override
-    public double applyFee(double amount) {
-        return amount + PROCESSING_FEE;
+    public BigDecimal applyFee(final BigDecimal amount) {
+        return amount.add(PROCESSING_FEE);
     }
 
     @Override
-    public String name() {
-        return "CARD";
+    public String type() {
+        return TYPE;
     }
 }

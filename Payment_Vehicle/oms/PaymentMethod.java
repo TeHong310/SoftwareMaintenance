@@ -1,10 +1,11 @@
-package oms;
+package oms.payment;
+
+import java.math.BigDecimal;
+
 
 public interface PaymentMethod {
 
-    /** F3: returns the amount AFTER this payment type's fee has been applied. */
-    double applyFee(double amount);
+    BigDecimal applyFee(BigDecimal amount);
 
-    /** Identifies the payment type (useful for receipts / logging). */
-    String name();
+    String type();
 }
