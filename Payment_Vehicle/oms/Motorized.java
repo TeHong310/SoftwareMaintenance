@@ -1,5 +1,7 @@
-package oms;
+package oms.vehicle;
 
-public abstract class Motorized extends Vehicle {
-    public abstract void startEngine();
+public interface Motorized {
+
+    /** Starts the vehicle's engine. */
+    void startEngine();
 }
