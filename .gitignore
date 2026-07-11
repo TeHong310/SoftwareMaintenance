@@ -1,0 +1,15 @@
+﻿# Build output
+target/
+bin/
+out/
+*.class
+
+# Eclipse
+.settings/
+.classpath
+.project
+
+# VS Code / IntelliJ
+.vscode/
+.idea/
+*.iml
