@@ -1,0 +1,27 @@
+package oms.payment;
+
+import java.math.BigDecimal;
+
+/**
+ * CASH payment strategy.
+ *
+ * <p>Adds no processing fee: the amount is returned unchanged, satisfying
+ * Requirement F3.</p>
+ *
+ * @author Member A
+ */
+public final class CashPayment implements PaymentMethod {
+
+    /** Canonical type key for this strategy. */
+    private static final String TYPE = "CASH";
+
+    @Override
+    public BigDecimal applyFee(final BigDecimal amount) {
+        return amount;
+    }
+
+    @Override
+    public String type() {
+        return TYPE;
+    }
+}
