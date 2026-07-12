@@ -5,15 +5,16 @@ import java.util.Objects;
 import oms.model.Order;
 
 /**
- * Database-backed {@link OrderRepository} (Requirements F6, F7, F15).
+ * Database-backed {@link OrderRepository} 
+ * (Requirements F6, F7, F15).
  *
- * <p>Connection details are never hard-coded here; they are obtained from
+ * Connection details are never hard-coded here; they are obtained from
  * {@link DatabaseConfig}, the single location in which configuration changes
  * are made (F15). The JDBC call itself is stubbed with the same console output
  * produced by the legacy {@code save()} method, so the observable behaviour of
- * the system is preserved by the refactoring.</p>
+ * the system is preserved by the refactoring.
  *
- * @author Member B
+ * @author Stanley
  */
 public final class DatabaseOrderRepository implements OrderRepository {
 
