@@ -34,7 +34,7 @@ import oms.payment.PaymentMethod;
  * removes the binary rounding error present in the legacy code and keeps the
  * money type consistent with {@link PaymentMethod}.</p>
  *
- * @author Member B
+ * @author tehong
  */
 public final class Order {
 

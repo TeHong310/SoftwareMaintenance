@@ -19,7 +19,7 @@ import oms.repository.OrderRepository;
  * and never on a concrete database (Requirement F7, Dependency Inversion
  * Principle).</p>
  *
- * @author Member B
+ * @author tehong
  */
 public final class OrderService {
 

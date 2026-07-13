@@ -31,7 +31,7 @@ import oms.service.OrderService;
  * suite doubles as a regression net proving that the refactoring preserves the
  * behaviour of the legacy {@code OMS} class while removing its code smells.</p>
  *
- * @author Member B
+ * @author tehong
  */
 @DisplayName("Order, Customer, Repository")
 class OrderTest {
