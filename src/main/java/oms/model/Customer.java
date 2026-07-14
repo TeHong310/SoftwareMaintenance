@@ -3,17 +3,26 @@ package oms.model;
 /**
  * Represents the customer who placed an order.
  *
- * <p>Formatting of the phone number is the responsibility of this component,
+ * <p>
+ * Formatting of the phone number is the responsibility of this component,
  * not of the order-processing component (Requirement F4). {@code Order} and
  * {@code OrderService} never touch the raw phone string, which removes the
  * <em>Feature Envy</em> smell present in the legacy {@code process()} method,
- * where order processing reached into customer data to strip characters.</p>
+ * where order processing reached into customer data to strip characters.
+ * </p>
  *
- * <p>The object validates itself on construction, so a {@code Customer} can
+ * <p>
+ * The object validates itself on construction, so a {@code Customer} can
  * never exist in an invalid state (Requirement F9, Single Responsibility
+<<<<<<< HEAD
  * Principle).</p>
+ 
+=======
+ * Principle).
+ * </p>
  *
- * @author Member B
+ * @author Tehong
+>>>>>>> 8126633b0cafaccd14caea4afac5f740356ad2c2
  */
 public final class Customer {
 
@@ -27,7 +36,8 @@ public final class Customer {
      * Creates a validated customer.
      *
      * @param name     the customer's name; must not be {@code null} or blank
-     * @param rawPhone the phone number in any format; must not be {@code null} or blank
+     * @param rawPhone the phone number in any format; must not be {@code null} or
+     *                 blank
      * @throws IllegalArgumentException if either argument is missing or blank
      */
     public Customer(final String name, final String rawPhone) {

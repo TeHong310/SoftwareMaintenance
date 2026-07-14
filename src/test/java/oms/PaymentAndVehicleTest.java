@@ -26,8 +26,7 @@ import oms.vehicle.Vehicle;
  * (Member A). Each test is traced to the functional requirement it protects,
  * demonstrating that the refactoring preserves behaviour (F3) while improving
  * the design (F8, F10, F11).
- *
- * @author Member A
+
  */
 @DisplayName("Payment Strategy and Vehicle Hierarchy")
 class PaymentAndVehicleTest {

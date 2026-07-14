@@ -8,8 +8,7 @@ import java.math.BigDecimal;
  * <p>Adds a fixed {@code $5.00} processing fee to the final amount, satisfying
  * Requirement F3. Monetary arithmetic uses {@link BigDecimal} to avoid the
  * rounding errors inherent in binary floating-point money.</p>
- *
- * @author Member A
+
  */
 public final class CardPayment implements PaymentMethod {
 

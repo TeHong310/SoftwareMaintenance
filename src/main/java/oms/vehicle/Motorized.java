@@ -8,8 +8,7 @@ package oms.vehicle;
  * such as {@link Bicycle} from exposing a {@code startEngine()} method they
  * cannot perform (Requirement F8, Interface Segregation and Liskov
  * Substitution Principles).</p>
- *
- * @author Member A
+ 
  */
 public interface Motorized {
 

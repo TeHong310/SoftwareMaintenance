@@ -33,8 +33,12 @@ import oms.payment.PaymentMethod;
  * <p>Monetary values use {@link BigDecimal} rather than {@code double}, which
  * removes the binary rounding error present in the legacy code and keeps the
  * money type consistent with {@link PaymentMethod}.</p>
+<<<<<<< HEAD
+
+=======
  *
- * @author Member B
+ * @author tehong
+>>>>>>> 8126633b0cafaccd14caea4afac5f740356ad2c2
  */
 public final class Order {
 

@@ -18,8 +18,12 @@ import oms.repository.OrderRepository;
  * internally, so this class depends on the {@link OrderRepository} abstraction
  * and never on a concrete database (Requirement F7, Dependency Inversion
  * Principle).</p>
+<<<<<<< HEAD
+
+=======
  *
- * @author Member B
+ * @author tehong
+>>>>>>> 8126633b0cafaccd14caea4afac5f740356ad2c2
  */
 public final class OrderService {
 

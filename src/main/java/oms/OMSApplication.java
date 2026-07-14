@@ -21,8 +21,7 @@ import oms.vehicle.Vehicle;
  * {@code start() -> step2() -> step3()} methods before anything useful
  * happened. Here the order is assembled in a single operation and handed to
  * {@link OrderService} (Requirement F1).</p>
- *
- * @author Member B
+
  */
 public final class OMSApplication {
 
