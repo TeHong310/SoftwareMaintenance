@@ -1,14 +1,13 @@
 package oms.repository;
 
 /**
- * Database Connection Configuration.
- * (Requirement F15).
+ * Database connection config.
+ * (F15).
  *
- * Every repository implementation reads its connection details from this
- * class, so moving the system to a different host, schema or credential set is
- * a one-file change. In the legacy design the connection details were implicit
- * inside {@code save()}, which meant a configuration change required editing
- * business logic; a classic Shotgun Surgery smell.
+ * All repository read connection detail from here, so change host or
+ * credential just need edit one file. Old code hardcode this inside
+ * save(), so any config change need touch business logic too. That's
+ * Shotgun Surgery smell, now fixed.
  */
 public final class DatabaseConfig {
 

@@ -22,10 +22,10 @@ import oms.vehicle.Truck;
 import oms.vehicle.Vehicle;
 
 /**
- * Unit tests for the Payment Strategy and Vehicle hierarchy subsystem
- * Each test is traced to the functional requirement it protects,
- * demonstrating that the refactoring preserves behaviour (F3) while improving
- * the design (F8, F10, F11).
+ * Unit test for payment strategy and vehicle hierarchy.
+ *
+ * <p>Each test map to a requirement, to prove refactor keep the
+ * behaviour (F3) while make the design better (F8, F10, F11).</p>
  */
 @DisplayName("Payment Strategy and Vehicle Hierarchy")
 class PaymentAndVehicleTest {

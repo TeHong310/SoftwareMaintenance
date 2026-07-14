@@ -5,14 +5,12 @@ import java.util.Objects;
 import oms.model.Order;
 
 /**
- * Database-backed {@link OrderRepository} 
- * (Requirements F6, F7, F15).
+ * Database-backed {@link OrderRepository}.
+ * (F6, F7, F15).
  *
- * Connection details are never hard-coded here; they are obtained from
- * {@link DatabaseConfig}, the single location in which configuration changes
- * are made (F15). The JDBC call itself is stubbed with the same console output
- * produced by the legacy {@code save()} method, so the observable behaviour of
- * the system is preserved by the refactoring.
+ * Connection detail get from {@link DatabaseConfig}, not hardcoded here.
+ * JDBC part still stub, just print same output as old save() method, so
+ * behaviour still same after refactor.
  */
 public final class DatabaseOrderRepository implements OrderRepository {
 
@@ -39,9 +37,8 @@ public final class DatabaseOrderRepository implements OrderRepository {
     @Override
     public void save(final Order order) {
         Objects.requireNonNull(order, "order is required");
-        // A real implementation would open a JDBC connection to connectionUrl
-        // and execute an INSERT here. The console output below preserves the
-        // observable behaviour of the legacy save() method.
+        // real version will open JDBC connection and do INSERT here,
+        // for now just print same output as legacy save()
         System.out.println("Saved to DB");
     }
 

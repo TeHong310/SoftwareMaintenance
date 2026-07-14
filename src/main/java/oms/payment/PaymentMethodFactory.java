@@ -6,7 +6,7 @@ import java.util.concurrent.ConcurrentHashMap;
 
 public final class PaymentMethodFactory {
 
-    // Thread-safe registry of payment strategies keyed by upper-case type
+    // keep payment strategy here, thread safe
     private static final Map<String, PaymentMethod> REGISTRY = new ConcurrentHashMap<>();
 
     static {
@@ -15,7 +15,7 @@ public final class PaymentMethodFactory {
     }
 
     private PaymentMethodFactory() {
-        // utility class: prevent instantiation
+        // no need instantiate this class
     }
 
     public static void register(final PaymentMethod method) {

@@ -3,14 +3,11 @@ package oms.payment;
 import java.math.BigDecimal;
 
 /**
- * Strategy contract for a payment method.
+ * Payment method strategy interface.
  *
- * <p>Each concrete payment type encapsulates its own fee rule, so the order
- * processing logic depends only on this abstraction rather than on a chain of
- * {@code if}/{@code else} branches. A new payment type (e.g. PAYPAL, CRYPTO)
- * is introduced by adding a new implementation of this interface, without
- * modifying any existing class &mdash; satisfying the Open/Closed Principle
- * (Requirement F11).</p>
+ * <p>Each payment type handle its own fee logic, order processing don't
+ * need if/else chain anymore. New type like PAYPAL just add new class,
+ * no need touch existing code (F11, Open/Closed Principle).</p>
  */
 public interface PaymentMethod {
 

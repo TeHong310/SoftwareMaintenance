@@ -3,15 +3,13 @@ package oms.repository;
 import oms.model.Order;
 
 /**
- * Persistence abstraction for orders 
- * (Requirement F7).
+ * Persistence abstraction for order.
+ * (F7).
  *
- * Order-processing logic depends on this interface rather than on a concrete
- * database class, so the storage technology can be swapped &mdash; PostgreSQL,
- * MySQL, or an in-memory double for testing &mdash; without a single change to
- * {@code OrderService} or {@link Order}. This is the Dependency Inversion
- * Principle: the high-level policy owns the abstraction, and the low-level
- * detail implements it.
+ * Order processing depend on this interface, not the actual database
+ * class. So can swap storage - Postgres, MySQL, or in-memory for test -
+ * without touch {@code OrderService} or {@link Order}. This is
+ * Dependency Inversion Principle.
  */
 public interface OrderRepository {
 

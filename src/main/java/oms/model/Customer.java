@@ -1,20 +1,16 @@
 package oms.model;
 
 /**
- * Represents the customer who placed an order.
+ * Customer who place the order.
  *
  * <p>
- * Formatting of the phone number is the responsibility of this component,
- * not of the order-processing component (Requirement F4). {@code Order} and
- * {@code OrderService} never touch the raw phone string, which removes the
- * <em>Feature Envy</em> smell present in the legacy {@code process()} method,
- * where order processing reached into customer data to strip characters.
+ * Phone formatting is this class job, not Order or OrderService (F4).
+ * Old process() method used to reach into customer data to strip the
+ * phone number itself, that's Feature Envy smell, now fixed.
  * </p>
  *
  * <p>
- * The object validates itself on construction, so a {@code Customer} can
- * never exist in an invalid state (Requirement F9, Single Responsibility
- * Principle).
+ * Validate on construction, so Customer object always valid (F9, SRP).
  * </p>
  */
 public final class Customer {

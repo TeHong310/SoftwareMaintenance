@@ -8,11 +8,11 @@ import java.util.Objects;
 import oms.model.Order;
 
 /**
- * In-memory {@link OrderRepository}, used as a test double.
+ * In-memory {@link OrderRepository}, for testing only.
  *
- * Its existence is itself the proof of Requirement F7: the concrete storage
- * implementation is swappable without modifying any order-processing logic,
- * because that logic depends only on the {@link OrderRepository} abstraction.
+ * This class prove F7 - storage can swap easily without touch order
+ * processing logic, because that logic only depend on the
+ * {@link OrderRepository} interface.
  */
 public final class InMemoryOrderRepository implements OrderRepository {
 

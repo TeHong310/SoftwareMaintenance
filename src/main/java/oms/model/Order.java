@@ -6,33 +6,22 @@ import java.math.RoundingMode;
 import oms.payment.PaymentMethod;
 
 /**
- * A single order, modelled as one cohesive, self-validating unit.
+ * One order, self-validating.
  *
- * <p>This class removes several code smells found in the legacy
- * {@code OMS} class:</p>
+ * <p>Fix a few smells from the old {@code OMS} class:</p>
  *
  * <ul>
- *   <li><b>F1 &mdash; Middle Man / Message Chain.</b> The order is built in a
- *       single constructor call. The legacy
- *       {@code start() -> step2() -> step3()} relay, which re-passed the same
- *       five values through intermediate methods, is gone.</li>
- *   <li><b>F9 &mdash; Data Clumps / Global Data.</b> Order id, customer, amount
- *       and payment method are stored together as one object with its own
- *       validation rules, instead of as {@code static} fields shared across the
- *       whole program.</li>
- *   <li><b>F12 / F13 &mdash; Dead Code / Middle Man.</b> The empty
- *       {@code validate()} stub and the {@code middle()} delegate are removed.
- *       Validation is a private method containing real logic, invoked directly
- *       by the constructor.</li>
- *   <li><b>F2 / F14 &mdash; Temporary Field.</b> The 10&nbsp;% discount is
- *       computed with a local variable inside {@link #applyDiscount(BigDecimal)}.
- *       No discount field exists on this class or anywhere else, so nothing is
- *       retained in memory once the calculation completes.</li>
+ *   <li><b>F1.</b> Build in one constructor call, no more
+ *       start() -> step2() -> step3() relay.</li>
+ *   <li><b>F9.</b> Order id, customer, amount, payment all in one object,
+ *       not static fields anymore.</li>
+ *   <li><b>F12 / F13.</b> Remove the empty validate() and middle(). Real
+ *       validation now inside a private method, called from constructor.</li>
+ *   <li><b>F2 / F14.</b> Discount just a local variable in
+ *       {@link #applyDiscount(BigDecimal)}, no field to keep the value.</li>
  * </ul>
  *
- * <p>Monetary values use {@link BigDecimal} rather than {@code double}, which
- * removes the binary rounding error present in the legacy code and keeps the
- * money type consistent with {@link PaymentMethod}.</p>
+ * <p>Use {@link BigDecimal} instead of double so no rounding error.</p>
  */
 public final class Order {
 

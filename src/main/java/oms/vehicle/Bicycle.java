@@ -3,10 +3,9 @@ package oms.vehicle;
 /**
  * Human-powered vehicle.
  *
- * <p>Intentionally does <em>not</em> implement {@link Motorized}, and therefore
- * exposes no {@code startEngine()} operation, unlike the original design in
- * which {@code Bicycle} inherited an engine it could not start
- * (Requirement F8).</p>
+ * <p>On purpose don't implement {@link Motorized}, so no startEngine()
+ * here. Different from old design where Bicycle inherit engine it
+ * cannot even start (F8).</p>
  */
 public final class Bicycle extends Vehicle {
 

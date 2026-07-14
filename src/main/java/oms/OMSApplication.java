@@ -15,12 +15,11 @@ import oms.vehicle.Truck;
 import oms.vehicle.Vehicle;
 
 /**
- * Entry point of the refactored Order Management System.
+ * Entry point for the OMS.
  *
- * <p>The legacy {@code OMS.main()} handed its five parameters to a chain of
- * {@code start() -> step2() -> step3()} methods before anything useful
- * happened. Here the order is assembled in a single operation and handed to
- * {@link OrderService} (Requirement F1).</p>
+ * <p>Old code pass the 5 params through start() -> step2() -> step3()
+ * before doing anything. Now everything build in one go and send to
+ * {@link OrderService} (F1).</p>
  */
 public final class OMSApplication {
 
@@ -38,9 +37,8 @@ public final class OMSApplication {
         final OrderRepository repository = new DatabaseOrderRepository(); // F7, F15
         final OrderService service = new OrderService(repository);
 
-        // F1: order id, customer, amount and payment type supplied in one call.
-        // The phone is deliberately written with punctuation to show that the
-        // Customer strips it (F4).
+        // F1: order id, customer, amount, payment type all in one call
+        // phone got symbols on purpose, to show Customer will strip it (F4)
         final Customer customer = new Customer("John", "(555) 123-4567");
         final Order order = new Order(
                 "ORD001",
@@ -54,9 +52,8 @@ public final class OMSApplication {
     }
 
     /**
-     * Shows that a mixed fleet is driven polymorphically, with no
-     * {@code TruckHandler}-style class anywhere (Requirement F10), and that a
-     * {@link Bicycle} simply has no engine to start (Requirement F8).
+     * Run mixed vehicles without any TruckHandler class (F10).
+     * Bicycle got no engine, so no startEngine here (F8).
      */
     private static void demonstrateVehicleHierarchy() {
         System.out.println();

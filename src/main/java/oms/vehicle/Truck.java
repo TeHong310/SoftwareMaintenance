@@ -3,9 +3,8 @@ package oms.vehicle;
 /**
  * Motorised goods vehicle.
  *
- * <p>Implements {@link Motorized} because it owns an engine, and defines its
- * own {@link #move()} behaviour so that no dedicated {@code TruckHandler} class
- * is needed to operate it (Requirements F8 and F10).</p>
+ * <p>Implement {@link Motorized} because got engine, and write own
+ * {@link #move()} so no need TruckHandler class to run it (F8, F10).</p>
  */
 public final class Truck extends Vehicle implements Motorized {
 

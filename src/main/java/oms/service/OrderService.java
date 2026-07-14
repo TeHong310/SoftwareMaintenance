@@ -7,17 +7,15 @@ import oms.model.Order;
 import oms.repository.OrderRepository;
 
 /**
- * Coordinates the processing of an order: calculate, report, persist.
+ * Handle order processing: calculate, print, save.
  *
- * <p>This class replaces the legacy {@code process()} God Method, which mixed
- * pricing rules, string formatting, console output and persistence in one
- * place. Each of those concerns now lives with the object that owns it, and
- * this service simply orchestrates them (Single Responsibility Principle).</p>
+ * <p>Replace old {@code process()} God Method that mix pricing, string
+ * formatting, console output and persistence together. Now each job stay
+ * with the class that own it, this class just orchestrate (SRP).</p>
  *
- * <p>The repository is supplied through the constructor rather than created
- * internally, so this class depends on the {@link OrderRepository} abstraction
- * and never on a concrete database (Requirement F7, Dependency Inversion
- * Principle).</p>
+ * <p>Repository pass in through constructor, not create inside. So this
+ * class only depend on {@link OrderRepository} interface, not the real
+ * database (F7, Dependency Inversion Principle).</p>
  */
 public final class OrderService {
 

@@ -25,11 +25,11 @@ import oms.repository.OrderRepository;
 import oms.service.OrderService;
 
 /**
- * Unit tests for the order subsystem (Member B).
+ * Unit test for order subsystem.
  *
- * <p>Each test is traced to the functional requirement it protects, so the
- * suite doubles as a regression net proving that the refactoring preserves the
- * behaviour of the legacy {@code OMS} class while removing its code smells.</p>
+ * <p>Each test map to one functional requirement, so this suite also
+ * act as regression check to make sure refactor never change the old
+ * {@code OMS} behaviour.</p>
  */
 @DisplayName("Order, Customer, Repository")
 class OrderTest {
