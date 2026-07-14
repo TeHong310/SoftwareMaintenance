@@ -13,8 +13,14 @@ import oms.model.Order;
  * are made (F15). The JDBC call itself is stubbed with the same console output
  * produced by the legacy {@code save()} method, so the observable behaviour of
 <<<<<<< HEAD
+<<<<<<< HEAD
  * the system is preserved by the refactoring.</p>
 
+=======
+ * the system is preserved by the refactoring.
+ *
+ * @author Stanley
+>>>>>>> 8126633b0cafaccd14caea4afac5f740356ad2c2
 =======
  * the system is preserved by the refactoring.
  *

@@ -13,8 +13,14 @@ import oms.model.Order;
  * Its existence is itself the proof of Requirement F7: the concrete storage
  * implementation is swappable without modifying any order-processing logic,
 <<<<<<< HEAD
+<<<<<<< HEAD
  * because that logic depends only on the {@link OrderRepository} abstraction.</p>
 
+=======
+ * because that logic depends only on the {@link OrderRepository} abstraction.
+ *
+ * @author Stanley
+>>>>>>> 8126633b0cafaccd14caea4afac5f740356ad2c2
 =======
  * because that logic depends only on the {@link OrderRepository} abstraction.
  *

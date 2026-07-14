@@ -32,7 +32,11 @@ import oms.service.OrderService;
  * behaviour of the legacy {@code OMS} class while removing its code smells.</p>
  *
 <<<<<<< HEAD
+<<<<<<< HEAD
  *  Member B
+=======
+ * @author tehong
+>>>>>>> 8126633b0cafaccd14caea4afac5f740356ad2c2
 =======
  * @author tehong
 >>>>>>> 8126633b0cafaccd14caea4afac5f740356ad2c2

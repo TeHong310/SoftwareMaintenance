@@ -12,8 +12,14 @@ import oms.model.Order;
  * {@code OrderService} or {@link Order}. This is the Dependency Inversion
  * Principle: the high-level policy owns the abstraction, and the low-level
 <<<<<<< HEAD
+<<<<<<< HEAD
  * detail implements it.</p>
 
+=======
+ * detail implements it.
+ *
+ * @author Stanley
+>>>>>>> 8126633b0cafaccd14caea4afac5f740356ad2c2
 =======
  * detail implements it.
  *
