@@ -7,7 +7,6 @@ package oms.vehicle;
  * exposes no {@code startEngine()} operation, unlike the original design in
  * which {@code Bicycle} inherited an engine it could not start
  * (Requirement F8).</p>
-
  */
 public final class Bicycle extends Vehicle {
 

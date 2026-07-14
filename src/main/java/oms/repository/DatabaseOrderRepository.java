@@ -12,11 +12,7 @@ import oms.model.Order;
  * {@link DatabaseConfig}, the single location in which configuration changes
  * are made (F15). The JDBC call itself is stubbed with the same console output
  * produced by the legacy {@code save()} method, so the observable behaviour of
-<<<<<<< HEAD
-<<<<<<< HEAD
- * the system is preserved by the refactoring.</p>
-
-
+ * the system is preserved by the refactoring.
  */
 public final class DatabaseOrderRepository implements OrderRepository {
 

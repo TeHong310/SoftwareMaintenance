@@ -11,13 +11,7 @@ import oms.model.Order;
  * MySQL, or an in-memory double for testing &mdash; without a single change to
  * {@code OrderService} or {@link Order}. This is the Dependency Inversion
  * Principle: the high-level policy owns the abstraction, and the low-level
-<<<<<<< HEAD
-<<<<<<< HEAD
- * detail implements it.</p>
-
-=======
  * detail implements it.
- 
  */
 public interface OrderRepository {
 

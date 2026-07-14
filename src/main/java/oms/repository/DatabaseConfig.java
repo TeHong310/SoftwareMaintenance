@@ -8,8 +8,7 @@ package oms.repository;
  * class, so moving the system to a different host, schema or credential set is
  * a one-file change. In the legacy design the connection details were implicit
  * inside {@code save()}, which meant a configuration change required editing
-<<<<<<< HEAD
-
+ * business logic; a classic Shotgun Surgery smell.
  */
 public final class DatabaseConfig {
 

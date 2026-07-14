@@ -11,7 +11,6 @@ import java.math.BigDecimal;
  * is introduced by adding a new implementation of this interface, without
  * modifying any existing class &mdash; satisfying the Open/Closed Principle
  * (Requirement F11).</p>
-
  */
 public interface PaymentMethod {
 

@@ -30,8 +30,6 @@ import oms.service.OrderService;
  * <p>Each test is traced to the functional requirement it protects, so the
  * suite doubles as a regression net proving that the refactoring preserves the
  * behaviour of the legacy {@code OMS} class while removing its code smells.</p>
- *
-
  */
 @DisplayName("Order, Customer, Repository")
 class OrderTest {

@@ -7,7 +7,6 @@ import java.math.BigDecimal;
  *
  * <p>Adds no processing fee: the amount is returned unchanged, satisfying
  * Requirement F3.</p>
-
  */
 public final class CashPayment implements PaymentMethod {
 
