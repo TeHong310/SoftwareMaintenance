@@ -21,12 +21,7 @@ import oms.repository.OrderRepository;
 <<<<<<< HEAD
 
 =======
- *
- * @author tehong
-<<<<<<< HEAD
->>>>>>> 8126633b0cafaccd14caea4afac5f740356ad2c2
-=======
->>>>>>> 8126633b0cafaccd14caea4afac5f740356ad2c2
+ 
  */
 public final class OrderService {
 

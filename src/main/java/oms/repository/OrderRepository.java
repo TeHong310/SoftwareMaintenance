@@ -17,14 +17,7 @@ import oms.model.Order;
 
 =======
  * detail implements it.
- *
- * @author Stanley
->>>>>>> 8126633b0cafaccd14caea4afac5f740356ad2c2
-=======
- * detail implements it.
- *
- * @author Stanley
->>>>>>> 8126633b0cafaccd14caea4afac5f740356ad2c2
+ 
  */
 public interface OrderRepository {
 

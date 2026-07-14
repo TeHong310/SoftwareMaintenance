@@ -19,13 +19,7 @@ import oms.model.Order;
 =======
  * because that logic depends only on the {@link OrderRepository} abstraction.
  *
- * @author Stanley
->>>>>>> 8126633b0cafaccd14caea4afac5f740356ad2c2
-=======
- * because that logic depends only on the {@link OrderRepository} abstraction.
- *
- * @author Stanley
->>>>>>> 8126633b0cafaccd14caea4afac5f740356ad2c2
+
  */
 public final class InMemoryOrderRepository implements OrderRepository {
 

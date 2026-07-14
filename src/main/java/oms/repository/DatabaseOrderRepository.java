@@ -16,16 +16,7 @@ import oms.model.Order;
 <<<<<<< HEAD
  * the system is preserved by the refactoring.</p>
 
-=======
- * the system is preserved by the refactoring.
- *
- * @author Stanley
->>>>>>> 8126633b0cafaccd14caea4afac5f740356ad2c2
-=======
- * the system is preserved by the refactoring.
- *
- * @author Stanley
->>>>>>> 8126633b0cafaccd14caea4afac5f740356ad2c2
+
  */
 public final class DatabaseOrderRepository implements OrderRepository {
 

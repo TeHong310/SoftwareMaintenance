@@ -9,19 +9,7 @@ package oms.repository;
  * a one-file change. In the legacy design the connection details were implicit
  * inside {@code save()}, which meant a configuration change required editing
 <<<<<<< HEAD
-<<<<<<< HEAD
- * business logic &mdash; a classic <em>Shotgun Surgery</em> smell.</p>
 
-=======
- * business logic ; a classic Shotgun Surgery smell.
- *
- * @author Stanley
->>>>>>> 8126633b0cafaccd14caea4afac5f740356ad2c2
-=======
- * business logic ; a classic Shotgun Surgery smell.
- *
- * @author Stanley
->>>>>>> 8126633b0cafaccd14caea4afac5f740356ad2c2
  */
 public final class DatabaseConfig {
 

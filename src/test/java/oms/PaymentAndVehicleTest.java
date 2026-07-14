@@ -23,7 +23,7 @@ import oms.vehicle.Vehicle;
 
 /**
  * Unit tests for the Payment Strategy and Vehicle hierarchy subsystem
- * (Member A). Each test is traced to the functional requirement it protects,
+ * Each test is traced to the functional requirement it protects,
  * demonstrating that the refactoring preserves behaviour (F3) while improving
  * the design (F8, F10, F11).
 
