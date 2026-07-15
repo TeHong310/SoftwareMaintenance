@@ -21,12 +21,7 @@ import oms.vehicle.Motorized;
 import oms.vehicle.Truck;
 import oms.vehicle.Vehicle;
 
-/**
- * Unit test for payment strategy and vehicle hierarchy.
- *
- * <p>Each test map to a requirement, to prove refactor keep the
- * behaviour (F3) while make the design better (F8, F10, F11).</p>
- */
+/*Unit test for payment strategy and vehicle hierarchy.*/
 @DisplayName("Payment Strategy and Vehicle Hierarchy")
 class PaymentAndVehicleTest {
 
